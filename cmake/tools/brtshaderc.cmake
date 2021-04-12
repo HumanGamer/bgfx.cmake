@@ -30,11 +30,11 @@ add_library( brtshaderc STATIC
     ${BGFX_DIR}/tools/shaderc/shaderc_glsl.cpp
     ${BGFX_DIR}/tools/shaderc/shaderc_hlsl.cpp
     ${BGFX_DIR}/tools/shaderc/shaderc_pssl.cpp
-    ${BGFX_DIR}/tools/shaderc/shaderc_spirv.cpp
     ${BGFX_DIR}/tools/shaderc/shaderc_metal.cpp
     #tools/brtshaderc
     ${BGFX_DIR}/tools/brtshaderc/brtshaderc.cpp
-    ${BGFX_DIR}/tools/brtshaderc/brtshaderc.h )
+    ${BGFX_DIR}/tools/brtshaderc/brtshaderc.h
+    ${BGFX_DIR}/tools/brtshaderc/brtshaderc_spirv.cpp )
 
 target_compile_definitions( brtshaderc PRIVATE "-D_CRT_SECURE_NO_WARNINGS" )
 set_target_properties( brtshaderc PROPERTIES FOLDER "bgfx/tools" )
